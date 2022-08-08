@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Fisheries Data Analysis and Interpretation - 2&nbsp; Key Concepts</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./method.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Key Concepts</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./" class="sidebar-logo-link">
+      <img src="./wwf.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Fisheries Data Analysis and Interpretation</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/lugoga/ecasData" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preface.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Management Context</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./keyconcepts.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Key Concepts</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./method.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Method</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./objective3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Spatial distribution of priority fisheries and fishing effort</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./objective4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Baseline Reference Points</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./objective5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Indicator trends of priority fisheries</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./objective6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Fishery Sustainable Indicators</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./objective7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Dashboard</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Appendices</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rmarkdown.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">R Markdown</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#fish" id="toc-fish" class="nav-link active" data-scroll-target="#fish"> <span class="header-section-number">2.1</span> Fish</a></li>
+  <li><a href="#fisher" id="toc-fisher" class="nav-link" data-scroll-target="#fisher"> <span class="header-section-number">2.2</span> Fisher</a></li>
+  <li><a href="#fish-catch" id="toc-fish-catch" class="nav-link" data-scroll-target="#fish-catch"> <span class="header-section-number">2.3</span> Fish catch</a></li>
+  <li><a href="#capture-fishery" id="toc-capture-fishery" class="nav-link" data-scroll-target="#capture-fishery"> <span class="header-section-number">2.4</span> Capture fishery</a></li>
+  <li><a href="#catch-rates" id="toc-catch-rates" class="nav-link" data-scroll-target="#catch-rates"> <span class="header-section-number">2.5</span> Catch Rates</a></li>
+  <li><a href="#fishing-effort" id="toc-fishing-effort" class="nav-link" data-scroll-target="#fishing-effort"> <span class="header-section-number">2.6</span> Fishing Effort</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Key Concepts</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>To guide its efforts, the research team defined the concept like fish, fish catch, catch rates,and total landings, to establish indicators (parameters) of this consultancy. The following chapter discuss how these terms were selected and and applied for this research project.</p>
+<section id="fish" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="fish"><span class="header-section-number">2.1</span> Fish</h2>
+<p>Fish are a renewable and mobile natural resource. Aside from aquaculture farming, fish are generally not owned until they have been caught. As such, fish stocks continue to be regarded as a common resource which needs to be managed collectively. This has led to a range of policies that regulate the amount of fishing at the EU level and more widely at sea basin level, as well as the types of fishing techniques and gear that can be used in fish capture.</p>
+</section>
+<section id="fisher" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="fisher"><span class="header-section-number">2.2</span> Fisher</h2>
+<p>Wikipedia define a fisher as a person who catches fish for a living or for sport <span class="citation" data-cites="fisher">Wikipedia contributors (<a href="references.html#ref-fisher" role="doc-biblioref">2022</a>)</span>.</p>
+</section>
+<section id="fish-catch" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="fish-catch"><span class="header-section-number">2.3</span> Fish catch</h2>
+<p>Fish catch (or simply catch) refers to catches of fishery products including fish, molluscs, crustaceans and other aquatic animals, residues and aquatic plants, that are taken:</p>
+<ul>
+<li>for all purposes (commercial, industrial, recreational and subsistence);</li>
+<li>by all types and classes of fishing units (including fishermen, vessels, gear, etc.);</li>
+<li>that are operating in inland, fresh and brackish water areas, and in inshore, offshore and high-seas fishing areas.</li>
+</ul>
+<p>Catch is normally expressed in live weight and derived by the application of conversion factors to the actual landed or product weight. As such, the catch statistics exclude quantities of fishery products which are caught but which, for a variety of reasons, are not landed.</p>
+</section>
+<section id="capture-fishery" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="capture-fishery"><span class="header-section-number">2.4</span> Capture fishery</h2>
+<p>Capture fishery refers to all kinds of harvesting of naturally occurring living resources in both marine and freshwater environments. On a broad level, capture fisheries can be classified as industrial, small-scale/artisanal and recreational. A more specific level includes reference to the fishing area, gear and the main target species, such as the small pelagic fishery, Rufiji Delta shrimp trawl fishery, deep water tuna longline fishery in the Exclusive Economic Zones.</p>
+</section>
+<section id="catch-rates" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="catch-rates"><span class="header-section-number">2.5</span> Catch Rates</h2>
+<p>Catch rate, or the estimated number of fish caught per angler trip, is determined using data collected during a fishing trip. Fish catch (or simply catch) refers to catches of fishery products including fish, molluscs, crustaceans and other aquatic animals, residues and aquatic plants, that are taken at from the fishing ground in specified time.</p>
+<p>Catch rate has been defined as differently by several institutes and individuals. Because each fisheries officer, goverment agency and non-goverment organizations will have different definitions or criteria for determining what they consider as catch rates based on the available data and the type of fishery, the research team has taken a broader approach to identify catch rates.</p>
+<p>The essence of catch rates is to standardized the landed weight. Standardization is essential, in any observational dataset, to allow undistorted comparisons of rates over time or over different areas. In fisheries, commercial catch rates are often standardized for use as an index of relative abundance, particularly in fisheries where a regular resource survey has not been feasible (Hilborn and Walters, 1992; Maunder and Punt, 2004).</p>
+<p>To be useful as an index of relative abundance, raw catch per unit effort (cpue) must be standardized for changes or variations in catchability, or changes in cpue that are attributable to variable catchability may be incorrectly concluded to be due to changes in abundance.</p>
+</section>
+<section id="fishing-effort" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="fishing-effort"><span class="header-section-number">2.6</span> Fishing Effort</h2>
+<p>Food and Agriculture Organization of the United Nations defined fishing effort as the time spent searching for fish (search duration) and/or the amount of fishing gear of a specific type used on the fishing grounds over a given unit of time e.g.&nbsp;a fishing operation, fishing activity, day or fishing trip. The measure of effort (unit of fishing effort) depends on the fishery and type of gear used. The impact of a unit of fishing effort on the fish populations and the ecosystem in general differs among vessels and fishers and depends on the gear deployed.</p>
+<p><strong>Species</strong> A group of similar organisms that can freely interbreed</p>
+<p><strong>Population</strong> A group of individuals of the same species living in a certain area</p>
+<p><strong>Stock</strong> A harvested or managed unit of fish- can be separated by geographical boundaries. Sometimes, more than one species is included in stock as they are harvested together as though they are one species</p>
+<!-- ```{mermaid} -->
+<!-- flowchart LR -->
+<!--   A[Data Acquire] -->
+<p>B(Data process) –&gt; <!--   B --> C{Analysis} –&gt; <!--   D --> C[Analysis] –&gt; <!--   C --> D[Model] –&gt; <!--   C --> E[Share] –&gt; <!--   E --> C[Analysis] –&gt; <!--   D --> E[Share] –&gt; <!--   D --> G[Communicate] –&gt; <!--   E --> G[Communicate] –&gt;</p>
+<!-- ``` -->
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography" style="display: none">
+<div id="ref-fisher" class="csl-entry" role="doc-biblioentry">
+Wikipedia contributors. (2022). <em>Fisher — <span>Wikipedia</span><span>,</span> the free encyclopedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=Fisher&amp;oldid=1099499204" class="uri">https://en.wikipedia.org/w/index.php?title=Fisher&amp;oldid=1099499204</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Management Context</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./method.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Method</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
